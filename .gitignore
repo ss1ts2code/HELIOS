@@ -1,0 +1,91 @@
+# =========================
+# Python cache files
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# =========================
+# Compiled extensions
+# =========================
+*.so
+*.pyd
+*.dll
+
+# =========================
+# Distribution / packaging
+# =========================
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# =========================
+# Virtual environments
+# =========================
+venv/
+env/
+ENV/
+.venv/
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# IDEs
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# OS generated files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Testing
+# =========================
+.pytest_cache/
+.coverage
+htmlcov/
+
+# =========================
+# Type checking
+# =========================
+.mypy_cache/
+
+# =========================
+# Local configuration files
+# =========================
+*.yaml
+*.yml
+*.ini
+*.cfg
+config_local.py
+
+# =========================
+# Large data files (VERY IMPORTANT for you)
+# =========================
+data/
+*.fits
+*.csv
+*.hdf5
+*.h5
+*.npy
+*.npz
+
+# =========================
+# Temporary outputs
+# =========================
+output/
+results/
+plots/

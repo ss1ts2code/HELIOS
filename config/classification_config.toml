@@ -1,0 +1,21 @@
+[classification]
+avg_grids  = 64       # Target average number of grids per dimension
+lambda_th  = 0.0      # Eigenvalue threshold for environment classification
+u_flag     = 0        # 0: real-space, 1: Fourier-space differentiation
+
+[smoothing]
+R_smooth = 5.0        # Smoothing scale in Mpc
+
+[paths]
+cube_catalog  = "data/cube_catalog/ocube.csv"
+geometry_file = "data/cube_catalog/ocube_geom.csv"
+gal_file      = "data/volume_limited/volume_limited.csv"
+output_file   = "data/output/galall_with_env.csv"
+
+[process]
+proc_mode= "mode_4"
+
+    # mode_1 : Serial_one_chunk_simple 
+    # mode_2 : Serial_one_chunk_vectorized
+    # mode_3 : Serial_multi_chunk_vectorized
+    # mode 4 : Parallel_multi_chunk_vectorized

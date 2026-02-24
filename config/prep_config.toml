@@ -1,0 +1,23 @@
+[paths]
+gal_file           = "data/raw/galaxy_catalog.csv"
+volume_output      = "data/volume_limited/volume_limited.csv"
+survey_info_output = "data/volume_limited/gal_inf.csv"
+vls_info_output    = "data/volume_limited/vls_info.txt"
+cube_catalog       = "data/cube_catalog/ocube.csv"
+geometry_file      = "data/cube_catalog/ocube_geom.csv"
+
+[cosmology]
+H0  = 67.4
+Om0 = 0.315
+
+[volume_limited]
+m_c = 17.77
+M_c = -20.5
+ran_frac = 0.99
+seed = 24545621
+
+[survey_geometry]
+ra_min  = 135.0
+ra_max  = 225.0
+dec_min = 0.0
+dec_max = 60.0

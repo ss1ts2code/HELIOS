@@ -1,0 +1,50 @@
+HELIOS/
+│
+├── Directory_Tree.txt
+├── README.md
+├── LICENSE
+├── pyproject.toml
+├── .gitignore
+│
+├── src/
+│   └── classify_galenv/
+│       │
+│       ├── prep/
+│       │   ├── __init__.py
+│       │   ├── volume_limited.py
+│       │   ├── outer_cube.py
+│       │   └── coordinates.py
+│       │
+│       ├── density/
+│       │   ├── __init__.py
+│       │   ├── cic.py
+│       │   └── smoothing.py
+│       │
+│       ├── potential/
+│       │   ├── __init__.py
+│       │   └── find_potential.py
+│       │
+│       ├── deformation/
+│       │   ├── __init__.py
+│       │   ├── deformation_tensor.py
+│       │
+│       ├── env_classification/
+│       │   ├── __init__.py
+│       │   ├── env_utils.py
+│       │   └── find_galaxy_env.py
+│       │
+│       ├── __init__.py
+│       └── pipeline.py
+│
+├── config/
+│   ├── prep_config.toml
+│   └── classification_config.toml
+│
+├── data/
+│   ├── raw/
+│   ├── volume_limited/
+│   ├── cube_catalog/
+│   └── output/
+│
+└── docs/
+    └── HELIOS_Documention.pdf

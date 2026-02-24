@@ -1,0 +1,34 @@
+[project]
+name = "classify_galenv"
+version = "0.1.0"
+description = "Galaxy environment classification for SDSS volume-limited samples"
+authors = [
+    { name = "Suman Sarkar" }
+]
+readme = "README.md"
+requires-python = ">=3.9"
+
+dependencies = [
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "scipy",
+    "tqdm",
+    "astropy",
+    "h5py"
+]
+
+[project.optional-dependencies]
+tomli = [
+    "tomli ; python_version < '3.11'"
+]
+
+[project.scripts]
+galenv-find = "classify_galenv.pipeline:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
